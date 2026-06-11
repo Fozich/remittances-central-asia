@@ -5,7 +5,9 @@
 #   rub_depr        log-change of RUB/USD rate, %    (+ = ruble weaker; remittances
 #                                                      sent in rubles buy fewer dollars)
 
-# install.packages(c("WDI", "dplyr", "readr"))  # first run only
+pkgs <- c("WDI", "dplyr", "readr")
+to_install <- pkgs[!pkgs %in% rownames(installed.packages())]
+if (length(to_install) > 0) install.packages(to_install)
 library(WDI)
 library(dplyr)
 library(readr)

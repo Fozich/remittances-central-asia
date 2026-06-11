@@ -7,7 +7,9 @@
 # No year FE: the regressors are common shocks (identical for every
 # country in a given year), so year dummies would absorb them entirely.
 
-# install.packages(c("fixest", "readr"))  # first run only
+pkgs <- c("fixest", "readr")
+to_install <- pkgs[!pkgs %in% rownames(installed.packages())]
+if (length(to_install) > 0) install.packages(to_install)
 library(fixest)
 library(readr)
 
