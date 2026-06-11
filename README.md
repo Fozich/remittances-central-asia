@@ -38,7 +38,7 @@ Run order: `R/01_build_panel.R` → `R/02_fe_model.R`.
 |---|---|---|
 | Russian GDP growth | 0.34 (0.26) | **0.62 (0.20)** |
 | RUB depreciation | −0.08 (0.06) | −0.00 (0.05) |
-| Within-R² | 0.14 | 0.28 |
+| Within-R² | 0.14 | 0.22 |
 | N | 46 | 43 |
 
 Robust SEs in parentheses. Computed from `data/panel.csv`; reproduce with `R/02_fe_model.R`.
